@@ -4,7 +4,6 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-
     <title>Vimal Atreya Ramaka</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <!--<meta content="Vimal Atreya Ramaka" name="description">-->
@@ -52,7 +51,18 @@
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src=
-    "https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script> <script src="res/js/bootstrap.min.js"></script><script src="http://vimal.ramaka.com/res/js/res.js"></script> 
+    "https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script> <script src="res/js/bootstrap.min.js"></script>
+    <script type="text/javascript">function setDivSize() {
+    var wWidth = $(window).width();
+    var wHeight = $(window).height();
+    var s1p = (wHeight * 0.40);
+    $('#hello').css('margin-top', s1p + 'px');
+}$(document).ready(function () {
+    setDivSize();
+});
+$(window).resize(function(){
+  setDivSize();
+});</script>
     <!-- Google Analyics -->
     <script type="text/javascript">
 var _gaq = _gaq || [];
